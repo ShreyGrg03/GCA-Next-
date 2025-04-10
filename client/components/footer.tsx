@@ -1,14 +1,10 @@
 import { BookOpen } from "lucide-react"
 import {
-  Calendar,
-
   Facebook,
   Twitter,
   Linkedin,
   Instagram,
   Heart,
-  ChevronRight,
-
 } from "lucide-react"
 import { Input } from "./ui/input"
 import { Button } from "./ui/button"
