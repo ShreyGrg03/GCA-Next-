@@ -1229,12 +1229,12 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {/* Replace with actual sponsor logos */}
               {[
-                { id: 1, name: "Acme Corp", logo: "/api/placeholder/120/80" },
-                { id: 2, name: "TechGiant", logo: "/api/placeholder/120/80" },
-                { id: 3, name: "Innovate Inc", logo: "/api/placeholder/120/80" },
-                { id: 4, name: "Future Systems", logo: "/api/placeholder/120/80" },
-                { id: 5, name: "Global Partners", logo: "/api/placeholder/120/80" },
-                { id: 6, name: "NextGen Solutions", logo: "/api/placeholder/120/80" }
+                { id: 1, name: "Wilmington Metropolitan University", logo: "https://orcad.co.in/wp-content/uploads/2023/01/wmu-new-removebg-preview-1.png" },
+                { id: 2, name: "Hawkins University", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrj9SuArp2numImJDeY8ydo7oaEL6ooMnrHA&s" },
+                { id: 3, name: "Oxford International College", logo: "https://www.oicbrighton.com/-/media/oic-oxford/wechatimg761.png?h=219&iar=0&w=538&rev=65a6e15e1e054814a242efb0eb3ff2b5&hash=1BF5F73E06642D5AE358ABE4918AE9CB" },
+                { id: 4, name: "American Merit Council", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY_X2LQc8tFKk_RGN4u90L8U6pdtfDfSOFCQ&s" },
+                { id: 5, name: "NIILM University", logo: "https://www.niilmuniversity.ac.in/web/assets/img/logo.png" },
+                { id: 6, name: "United Nations Uzbekistan", logo: "https://timun.wiut.uz/images/2023/10/06/002.jpg" }
               ].map((sponsor) => (
                 <motion.div
                   key={sponsor.id}
