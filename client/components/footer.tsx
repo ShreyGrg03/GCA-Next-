@@ -29,13 +29,13 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 mb-3">
-              Golden Conference Award (GCA) 
+              Golden Conference Award (GCA)
             </p>
             {/* <p className="text-white/80 flex items-center gap-2">
               <Calendar className="h-4 w-4" /> November 27-29, 2025 | Malaysia
             </p> */}
           </div>
-          <div>
+          {/* <div>
             <h5 className="text-white text-lg font-medium mb-6">Quick Links</h5>
             <ul className="space-y-3">
               {["Home", "About", "Topics", "Registration", "Submission", "Venue", "Contact"].map((link) => (
@@ -49,7 +49,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           <div>
             <h5 className="text-white text-lg font-medium mb-6">Connect With Us</h5>
             <div className="flex space-x-4 mb-8">
@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <p className="text-white/80 text-center md:text-left">&copy; GCA. All rights reserved.</p>
             <p className="text-white/80 text-center md:text-right">
-              Designed with <Heart className="h-4 w-4 text-red-400 inline" /> for GCA 
+              Designed with <Heart className="h-4 w-4 text-red-400 inline" /> for GCA
             </p>
           </div>
         </div>
