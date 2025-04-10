@@ -1226,7 +1226,7 @@ export default function Home() {
               <span>Silver Sponsors</span>
             </h3>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
               {/* Replace with actual sponsor logos */}
               {[
                 { id: 1, name: "Wilmington Metropolitan University", logo: "https://orcad.co.in/wp-content/uploads/2023/01/wmu-new-removebg-preview-1.png" },
