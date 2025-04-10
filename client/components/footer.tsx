@@ -25,15 +25,15 @@ const Footer = () => {
               </div>
               <div>
                 <span className="font-bold text-xl">GCA</span>
-                <span className="ml-1 text-sm text-white/80">2025</span>
+                <span className="ml-1 text-sm text-white/80"></span>
               </div>
             </div>
             <p className="text-white/80 mb-3">
-              Golden Conference Award (GCA) 2025
+              Golden Conference Award (GCA) 
             </p>
-            <p className="text-white/80 flex items-center gap-2">
+            {/* <p className="text-white/80 flex items-center gap-2">
               <Calendar className="h-4 w-4" /> November 27-29, 2025 | Malaysia
-            </p>
+            </p> */}
           </div>
           <div>
             <h5 className="text-white text-lg font-medium mb-6">Quick Links</h5>
@@ -90,9 +90,9 @@ const Footer = () => {
         </div>
         <div className="mt-12 pt-6 border-t border-white/20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <p className="text-white/80 text-center md:text-left">&copy; 2025 GCA. All rights reserved.</p>
+            <p className="text-white/80 text-center md:text-left">&copy; GCA. All rights reserved.</p>
             <p className="text-white/80 text-center md:text-right">
-              Designed with <Heart className="h-4 w-4 text-red-400 inline" /> for GCA 2025
+              Designed with <Heart className="h-4 w-4 text-red-400 inline" /> for GCA 
             </p>
           </div>
         </div>
