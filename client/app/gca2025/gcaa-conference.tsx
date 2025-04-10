@@ -56,7 +56,6 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react"
-import Image from "next/image"
 
 export default function GCAConference() {
   const [showMoreTopics, setShowMoreTopics] = useState(false)
@@ -1323,9 +1322,7 @@ export default function GCAConference() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <Badge className="text-sm font-semibold text-[#2783ac] bg-blue-50 uppercase tracking-wider px-4 py-1.5 rounded-full border border-blue-100">
-              Research
-            </Badge>
+           
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#2783ac] to-[#c753a5] bg-clip-text text-transparent relative inline-block mt-4 mb-6">
               Publication
             </h2>
@@ -1790,7 +1787,7 @@ export default function GCAConference() {
                         <div key={index} className="text-center mb-3">
                           <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 shadow-sm mb-2 hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
                             <div className="relative">
-                              <Image
+                              <img
                                 src={`/images/${flag.code.toLowerCase()}.png`}
                                 alt={flag.country}
                                 className="w-10 h-auto rounded shadow-sm"

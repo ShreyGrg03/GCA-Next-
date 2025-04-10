@@ -64,11 +64,6 @@ const Navbar = () => {
                     GCA 2026
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-white hover:bg-[#007bb9] cursor-pointer">
-                  <Link href="/gca2027" className="w-full">
-                    GCA 2027
-                  </Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
@@ -118,15 +113,6 @@ const Navbar = () => {
                         onClick={() => setIsMenuOpen(false)}
                       >
                         GCA 2026
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/gca2027"
-                        className="text-white hover:text-white/80"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        GCA 2027
                       </Link>
                     </li>
                   </ul>

@@ -1,5 +1,4 @@
 import { Home } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const cn = (...classes: (string | boolean | undefined)[]) => {
@@ -11,7 +10,7 @@ const NotFoundPage: React.FC = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-white p-10">
       
       <div className="flex flex-col items-center h-96 w-full">
-        <Image src="/images/dd.gif" alt="404 illustration" className="mb-6 max-h-72 object-contain" />
+        <img src="/images/dd.gif" alt="404 illustration" className="mb-6 max-h-72 object-contain" />
         <h1 className="text-8xl text-center text-gray-800">404</h1>
       </div>
 

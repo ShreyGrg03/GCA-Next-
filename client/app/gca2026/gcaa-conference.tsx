@@ -56,7 +56,6 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react"
-import Image from "next/image"
 
 export default function GCAAConference() {
   const [showMoreTopics, setShowMoreTopics] = useState(false)
@@ -1790,7 +1789,7 @@ export default function GCAAConference() {
                         <div key={index} className="text-center mb-3">
                           <div className="bg-gray-50 p-3 rounded-lg border border-gray-100 shadow-sm mb-2 hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
                             <div className="relative">
-                              <Image
+                              <img
                                 src={`/images/${flag.code.toLowerCase()}.png`}
                                 alt={flag.country}
                                 className="w-10 h-auto rounded shadow-sm"
