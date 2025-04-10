@@ -765,23 +765,7 @@ export default function Home() {
           </div>
 
           {/* Package comparison slider/tabs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-12 max-w-md mx-auto"
-          >
-            <div className="bg-white rounded-full p-1.5 shadow-md flex justify-between border border-gray-100">
-              <button className="py-2 px-6 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium text-sm">
-                Annual Packages
-              </button>
-              <button className="py-2 px-6 rounded-full text-gray-600 hover:bg-gray-50 font-medium text-sm transition-colors">
-                Custom Solutions
-              </button>
-            </div>
-          </motion.div>
-
+         
           {/* Pricing cards with improved layout and aligned buttons */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 mb-12">
             {/* Standard Package */}
@@ -1329,9 +1313,9 @@ export default function Home() {
           </Link>
 
           {/* Optional: Add social proof or deadline */}
-          <p className="mt-8 text-gray-300 text-sm">
+          {/* <p className="mt-8 text-gray-300 text-sm">
             Nominations close in 30 days • Previous winners include industry leaders
-          </p>
+          </p> */}
         </motion.div>
       </section>
 

@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import ChatBot from "@/components/ChatBot";
+// import ChatBot from "@/components/ChatBot";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +35,7 @@ export default function RootLayout({
           <Navbar />
           <div className="flex-grow">{children}</div>
           <Footer />
-          <ChatBot />
+          {/* <ChatBot /> */}
         </ThemeProvider>
       </body>
     </html>
