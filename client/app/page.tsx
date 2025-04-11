@@ -1257,47 +1257,6 @@ export default function Home() {
               ))}
             </div>
           </motion.div>
-
-          {/* Gold Sponsors Section - Optional */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="mt-16"
-          >
-            <h3 className="text-xl font-semibold text-center mb-10 flex items-center justify-center gap-2">
-              <Award className="h-5 w-5 text-amber-500" />
-              <span>Gold Sponsors</span>
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                { id: 1, name: "Premier Solutions", logo: "/api/placeholder/160/100" },
-                { id: 2, name: "Enterprise Global", logo: "/api/placeholder/160/100" },
-                { id: 3, name: "Zenith Industries", logo: "/api/placeholder/160/100" }
-              ].map((sponsor) => (
-                <motion.div
-                  key={sponsor.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: 0.1 * sponsor.id }}
-                  whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
-                  className="bg-white rounded-xl shadow-md p-8 border border-amber-100 h-40 flex items-center justify-center"
-                >
-                  <div className="flex flex-col items-center">
-                    <img
-                      src={sponsor.logo}
-                      alt={`${sponsor.name} logo`}
-                      className="h-20 object-contain mb-3"
-                    />
-                    <p className="font-medium text-gray-800 text-base">{sponsor.name}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div> */}
         </div>
       </section>
 
@@ -1312,69 +1271,64 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-4">
-              Partnerships
+            <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4">
+            Collaborations
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Accreditation & Collaboration</h2>
+
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our conference is supported by prestigious academic and industry partners worldwide
+              We are proud to collaborate with leading organizations that share our vision for excellence and innovation
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mt-6"></div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Academic Partners Card */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <Card className="h-full bg-white shadow-lg border-0 overflow-hidden">
-                <div className="h-2 bg-gradient-to-r from-purple-500 to-indigo-500"></div>
-                <div className="p-8">
-                  {/* Card Header */}
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <GraduationCap className="h-6 w-6 text-purple-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800">Academic Partners</h3>
-                      <p className="text-gray-600">Leading educational institutions</p>
-                    </div>
-                  </div>
+          {/* Academic Partners Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
 
-                  {/* Academic Partners Grid */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                    {[
-                      "University of Science and Technology",
-                      "National University of Singapore",
-                      "Seoul National University",
-                      "La Trobe University",
-                      "University of Johannesburg",
-                      "Ton Duc Thang University",
-                    ].map((partner, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: 0.1 * index }}
-                        className="flex items-center gap-3 bg-purple-50 p-3 rounded-lg"
-                      >
-                        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
-                          <BookOpen className="h-4 w-4 text-purple-600" />
-                        </div>
-                        <p className="text-sm font-medium text-gray-700">{partner}</p>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </Card>
-            </motion.div>
+            <h3 className="text-xl font-semibold text-center mb-10 flex items-center justify-center gap-2">
+              <Award className="h-5 w-5 text-gray-500" />
+              <span>Our Collaborators</span>
+            </h3>
 
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {/* Replace with actual collaborators logos */}
+              {[
+                { id: 1, name: "Eduqua Certified", logo: "https://www.ssbm.ch/wp-content/uploads/2020/03/eduqua_logo_notxt_mit_Schutzraum_cmyk-1200x534-1.jpg" },
+                { id: 2, name: "5 Star QS Rating", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyi8SLkE0CeVc7vF-hEk_6vL8Yxy_HNEX3C2M-zl5oKE6sLF5tS2JGTe2qCpe24YSgTh8&usqp=CAU" },
+                { id: 3, name: "ACBSP Member", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYzPqgLcolu3GuCKRXLO6DTgB25MvbdiwrJw&s" },
+                { id: 4, name: "BGA MP", logo: "https://raw.githubusercontent.com/hdpngworld/HPW/main/uploads/650bcc2aa0a46-logo.png" },
+                { id: 5, name: "IACBE Education", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxVm96ScBdR57krSC3QwbOAQuLbMMYk4z35w&s" },
+              ].map((accreditation) => (
+                <motion.div
+                  key={accreditation.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.05 * accreditation.id }}
+                  whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
+                  className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 h-32 flex items-center justify-center"
+                >
+                  <div className="flex flex-col items-center">
+                    <img
+                      src={accreditation.logo}
+                      alt={`${accreditation.name} logo`}
+                      className="h-16 object-contain mb-2"
+                    />
+                    <p className="font-medium text-gray-700 text-sm">{accreditation.name}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
             {/* Industry Collaborations Card */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -1384,7 +1338,7 @@ export default function Home() {
                 <div className="h-2 bg-gradient-to-r from-amber-500 to-amber-400"></div>
                 <div className="p-8">
                   {/* Card Header */}
-                  <div className="flex items-center gap-4 mb-6">
+                  {/* <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Briefcase className="h-6 w-6 text-amber-600" />
                     </div>
@@ -1392,10 +1346,10 @@ export default function Home() {
                       <h3 className="text-xl font-bold text-gray-800">Industry Collaborations</h3>
                       <p className="text-gray-600">Partnerships with leading organizations</p>
                     </div>
-                  </div>
+                  </div>  */}
 
                   {/* Industry Partners Grid */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                  {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                     {[
                       "Tech Innovation Alliance",
                       "Global Business Forum",
@@ -1422,10 +1376,10 @@ export default function Home() {
                 </div>
               </Card>
             </motion.div>
-          </div>
+          </div> */}
 
           {/* Accreditation & Recognition Card */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -1438,10 +1392,10 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
                   <BadgeCheck className="h-5 w-5 text-purple-600" />
                   Accreditation & Recognition
-                </h3>
+                </h3> */}
 
                 {/* Recognition Items Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
                     {
                       icon: Shield,
@@ -1482,10 +1436,10 @@ export default function Home() {
                       <p className="text-sm text-gray-600 ml-14">{item.description}</p>
                     </motion.div>
                   ))}
-                </div>
+                </div> */}
 
                 {/* Note Box */}
-                <div className="mt-8 p-4 bg-purple-50 rounded-lg border border-purple-100">
+                {/* <div className="mt-8 p-4 bg-purple-50 rounded-lg border border-purple-100">
                   <div className="flex items-start gap-3">
                     <div className="text-purple-600 mt-1 flex-shrink-0">
                       <Info className="h-5 w-5" />
@@ -1499,6 +1453,71 @@ export default function Home() {
                 </div>
               </div>
             </Card>
+          </motion.div>
+        </div> */}
+      {/* </div></section> */}
+
+      {/* Members Ship */}
+      <section id="membership" className="py-24 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-purple-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4">
+            Membership
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Membership & Representation</h2>
+
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            We welcome dedicated individuals and groups whose values resonate with our mission of excellence and innovation.
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mt-6"></div>
+          </motion.div>
+
+          {/* Academic Membership Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+
+            <h3 className="text-xl font-semibold text-center mb-10 flex items-center justify-center gap-2">
+              <Award className="h-5 w-5 text-gray-500" />
+              <span>Our Members</span>
+            </h3>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-10">
+              {/* Replace with actual members logos */}
+              {[
+                { id: 1, name: "UN PRME Member", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl34uie7Ni9rWr33RsL8k2vKnYFVn524JQpA&s" },
+                { id: 2, name: "UN PRME Member", logo: "https://kjsim.somaiya.edu/assets/simsr/img/aacsb/aacsb-logo-accredited-color.png" },
+              ].map((membership) => (
+                <motion.div
+                  key={membership.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.05 * membership.id }}
+                  whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
+                  className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 h-32 flex items-center justify-center"
+                >
+                  <div className="flex flex-col items-center">
+                    <img
+                      src={membership.logo}
+                      alt={`${membership.name} logo`}
+                      className="h-16 object-contain mb-2"
+                    />
+                    <p className="font-medium text-gray-700 text-sm">{membership.name}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
