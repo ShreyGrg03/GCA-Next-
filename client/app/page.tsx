@@ -31,15 +31,7 @@ import {
   Sparkles,
   Brain,
   Cpu,
-  Handshake,
-  Building2,
-  GraduationCap,
-  Briefcase,
-  Shield,
-  Globe2,
-  BookOpen,
-  BadgeCheck,
-  Info,
+ 
 } from "lucide-react"
 
 // Animation variants
