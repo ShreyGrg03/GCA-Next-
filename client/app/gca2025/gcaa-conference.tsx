@@ -56,6 +56,7 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react"
+import Link from "next/link"
 
 export default function GCAConference() {
   const [showMoreTopics, setShowMoreTopics] = useState(false)
@@ -109,87 +110,87 @@ export default function GCAConference() {
             <source src="/video/2.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/60"></div>
-        </div>
-        <motion.div
-          style={{ opacity }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white z-10"
-        >
-          <div className="flex flex-col items-center">
-            <span className="text-sm mb-2">Scroll Down</span>
-            <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-              <motion.div
-                className="w-1 h-2 bg-white rounded-full mt-2"
-                animate={{
-                  y: [0, 12, 0],
-                }}
-                transition={{
-                  repeat: Number.POSITIVE_INFINITY,
-                  duration: 1.5,
-                }}
-              />
+          <motion.div
+            style={{ opacity }}
+            className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white z-10"
+          >
+            <div className="flex flex-col items-center">
+              <span className="text-sm mb-2">Scroll Down</span>
+              <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <motion.div
+                  className="w-1 h-2 bg-white rounded-full mt-2"
+                  animate={{
+                    y: [0, 12, 0],
+                  }}
+                  transition={{
+                    repeat: Number.POSITIVE_INFINITY,
+                    duration: 1.5,
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex justify-center">
-            <div className="text-center max-w-3xl">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mb-4"
-              >
-                <Badge
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-sm text-white px-3 py-1 text-sm rounded-full mb-4"
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="flex justify-center">
+              <div className="text-center max-w-3xl">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="mb-4"
                 >
-                  November 27-29, 2025 | Malaysia
-                </Badge>
-              </motion.div>
-              <motion.h1
-                className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                <span className="block">WELCOME TO</span>
-                <span className="bg-gradient-to-r from-[#2783ac] to-[#c753a5] bg-clip-text text-transparent">
-                  GCA 2025
-                </span>
-              </motion.h1>
-              <motion.p
-                className="text-xl md:text-2xl text-white/90 mb-8"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-              >
-                The Golden Conference Awards on Artificial Intelligence and Applications
-              </motion.p>
-              <motion.div
-                className="flex flex-col sm:flex-row justify-center gap-4 mt-8"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-[#2783ac] to-[#c753a5] hover:opacity-90 border-0"
-                  asChild
+                  <Badge
+                    variant="outline"
+                    className="bg-white/10 backdrop-blur-sm text-white px-3 py-1 text-sm rounded-full mb-4"
+                  >
+                    November 27-29, 2025 | Malaysia
+                  </Badge>
+                </motion.div>
+                <motion.h1
+                  className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  <a href="#registration">
-                    Register Now <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/20" asChild>
-                  <a href="#submission">Submit Paper</a>
-                </Button>
-              </motion.div>
+                  <span className="block">WELCOME TO</span>
+                  <span className="bg-gradient-to-r from-[#2783ac] to-[#c753a5] bg-clip-text text-transparent">
+                    GCA 2025
+                  </span>
+                </motion.h1>
+                <motion.p
+                  className="text-xl md:text-2xl text-white/90 mb-8"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                >
+                  The Golden Conference Awards on Artificial Intelligence and Applications
+                </motion.p>
+                <motion.div
+                  className="flex flex-col sm:flex-row justify-center gap-4 mt-8"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                >
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-[#2783ac] to-[#c753a5] hover:opacity-90 border-0"
+                    asChild
+                  >
+                    <Link href={'/registration'} className="w-full sm:w-auto">
+
+                      Register Now <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/20" asChild>
+                    <a href="#submission">Submit Paper</a>
+                  </Button>
+                </motion.div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-24 bg-gradient-to-b from-white to-primary-50 relative overflow-hidden">
         {/* Decorative elements */}
@@ -1322,7 +1323,7 @@ export default function GCAConference() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-           
+
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#2783ac] to-[#c753a5] bg-clip-text text-transparent relative inline-block mt-4 mb-6">
               Publication
             </h2>
