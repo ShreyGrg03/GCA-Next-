@@ -112,26 +112,26 @@ export default function Home() {
 
   const faqItems = [
     {
-      question: "What are The Golden Conference Awards?",
+      question: "What are Golden Conference Awards?",
       answer:
-        "The Golden Conference Awards recognize and celebrate the outstanding achievements of individuals and organizations across various fields, including business, technology, arts, culture, and education.",
+        "Golden Conference Awards recognize and celebrate the outstanding achievements of individuals and organizations across various fields, including business, technology, arts, culture, and education.",
     },
     {
-      question: "Who can be nominated for The Golden Conference Awards?",
+      question: "Who can be nominated for Golden Conference Awards?",
       answer:
         "Individuals and organizations that have made significant contributions in their respective fields are eligible for nomination.",
     },
     {
       question: "What are the benefits of participating?",
       answer:
-        "Participating in The Golden Conference Awards offers recognition, networking, exposure, inspiration, and opportunities.",
+        "Participating in Golden Conference Awards offers recognition, networking, exposure, inspiration, and opportunities.",
     },
     {
       question: "How do I nominate someone for an award?",
       answer: "To nominate someone, please fill out the nomination form available on our official website.",
     },
     {
-      question: "How can I contact The Golden Conference Awards team?",
+      question: "How can I contact Golden Conference Awards team?",
       answer: "You can contact us at infogoldenconference@gmail.com or call +91 8283857170.",
     },
   ]
@@ -386,7 +386,7 @@ export default function Home() {
                   Our Mission
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  The Golden Conference Award unites scientists, researchers, and industry leaders to exchange
+                  Golden Conference Award unites scientists, researchers, and industry leaders to exchange
                   groundbreaking ideas and emerging technologies. We foster collaboration between academia and industry
                   while recognizing excellence and innovation.
                 </p>
@@ -430,7 +430,7 @@ export default function Home() {
                 {showFullAbout ? (
                   <>
                     <p className="mb-4">
-                      The Golden Conference Award is a premier tech-conference that unites global scientists,
+                      Golden Conference Award is a premier tech-conference that unites global scientists,
                       researchers, and industry leaders. This exclusive platform facilitates the exchange of ideas and
                       technologies, attracting renowned speakers worldwide to present cutting-edge research and industry
                       trends.
@@ -449,7 +449,7 @@ export default function Home() {
                     </p>
 
                     <p className="mb-4">
-                      The Golden Conference Award also specializes in media solutions, including profiling, consulting,
+                      Golden Conference Award also specializes in media solutions, including profiling, consulting,
                       promotions, and advertising. We organize exhibitions, award events, and conferences that nurture
                       and promote innovation and talent.
                     </p>
@@ -551,7 +551,7 @@ export default function Home() {
               {showFullEvents ? (
                 <>
                   <p>
-                    The Golden Conference Award proudly hosted the The Business and Education Awards & The Icon Awards,
+                    Golden Conference Award proudly hosted the The Business and Education Awards & The Icon Awards,
                     a landmark event celebrating excellence across diverse industries. This prestigious ceremony brought
                     together leaders, entrepreneurs, educators, and visionaries from around the world, recognizing
                     individuals and organizations that have made outstanding contributions to business, education, and
