@@ -164,7 +164,7 @@ export default function GCAConference() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  The Golden Conference Awards on Artificial Intelligence and Applications
+                  Golden Conference Awards on Artificial Intelligence and Applications
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row justify-center gap-4 mt-8"

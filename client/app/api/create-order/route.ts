@@ -1,24 +1,26 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Razorpay from 'razorpay';
 
+// Initialize Razorpay with environment variables
 const razorpay = new Razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET
-})
+});
 
 export async function POST(request: NextRequest) {
     try {
-        console.log("Creating order...")
-        const body = await request.json()
-        console.log("Body: ", body)
+        console.log("Creating order...");
+        console.log(request.body);
         const order = await razorpay.orders.create({
-            amount: 2500 * 100,
+            amount: 2500 * 100, // Amount in smallest currency unit (paise)
             currency: "INR",
             receipt: "receipt_" + Math.random().toString(36).substring(7)
-        })
-        return NextResponse.json({ orderId: order.id }, { status: 200 })
+        });
+        
+        console.log("Order created:", order.id);
+        return NextResponse.json({ orderId: order.id }, { status: 200 });
     } catch (error) {
-        console.error(" "+error);
+        console.error("Error creating order:", error);
+        return NextResponse.json({ error: "Failed to create order" }, { status: 500 });
     }
-    return NextResponse.json({ error: "Something went wrong" }, { status: 500 })
 }

@@ -5,8 +5,6 @@ import Script from "next/script"
 import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import { z } from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
 import { CreditCard, CheckCircle, AlertCircle, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -15,7 +13,10 @@ import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { toast } from "sonner"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
 
+// Interface definitions
 interface RazorpayResponse {
     razorpay_payment_id: string
     razorpay_order_id: string
@@ -55,6 +56,7 @@ declare global {
         Razorpay: new (options: RazorpayOptions) => RazorpayInstance
     }
 }
+
 const formSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
     email: z.string().email({ message: "Please enter a valid email address." }),
@@ -85,7 +87,7 @@ export default function RazorpayPage() {
             const redirectTimeout = setTimeout(() => {
                 router.push("/afterpayment")
             }, 1500)
-            
+
             return () => clearTimeout(redirectTimeout)
         }
     }, [paymentStatus, router])
@@ -95,15 +97,26 @@ export default function RazorpayPage() {
             setIsProcessing(true)
             setPaymentStatus("idle")
 
+            // Make the POST request to create-order API
             const response = await fetch("/api/create-order", {
                 method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                // No need to send a body, but including an empty object for good practice
+                body: JSON.stringify({}),
             })
 
             if (!response.ok) {
-                throw new Error("Failed to create order")
+                const errorData = await response.json()
+                throw new Error(errorData.error || "Failed to create order")
             }
 
             const data = await response.json()
+
+            if (!data.orderId) {
+                throw new Error("No order ID received from server")
+            }
 
             const options = {
                 key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
@@ -117,7 +130,7 @@ export default function RazorpayPage() {
                     toast("Payment Successful", {
                         description: `Payment ID: ${response.razorpay_payment_id}`,
                     })
-                    
+
                     // The redirect will be handled by the useEffect above
                 },
                 prefill: {
@@ -138,6 +151,7 @@ export default function RazorpayPage() {
                 },
             }
 
+            // Initialize and open Razorpay
             const razorpay = new window.Razorpay(options)
             razorpay.open()
         } catch (error) {

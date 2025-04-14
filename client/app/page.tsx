@@ -15,10 +15,7 @@ import {
   Layers,
   ListChecks,
   MapPin,
-  Minus,
-  Package,
-  PlusCircle,
-  Star,
+
   Users,
   XCircle,
   ChevronDown,
@@ -31,7 +28,7 @@ import {
   Sparkles,
   Brain,
   Cpu,
- 
+
 } from "lucide-react"
 
 // Animation variants
@@ -253,7 +250,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-tight"
           >
-            <span className="block">The</span>
+            {/* <span className="block">The</span> */}
             <motion.span
               className="bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent inline-block"
               animate={{
@@ -779,27 +776,27 @@ export default function Home() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800">Standard</h3>
                   <div className="my-4 flex items-baseline justify-center">
-                    <span className="text-3xl font-bold text-purple-800">₹49k</span>
+                    <span className="text-lg font-medium text-purple-800">For individuals & small teams</span>
                   </div>
-                  <p className="text-sm text-gray-500 mb-6">For individuals & small teams</p>
                 </div>
                 <div className="px-6 pb-4 flex-grow">
                   <ul className="space-y-3 mb-8">
+                    <li className="flex items-start text-sm">
+                      <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0 mt-1" />
+                      <div>
+                        <span>Honorary Degree from American Merit Council and Oxford International College</span>
+                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
+                          <span className="text-xs text-gray-400">University Logo</span>
+                        </div>
+                      </div>
+                    </li>
                     <li className="flex items-center text-sm">
                       <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0" />
                       <span>GCA Membership and Kit</span>
                     </li>
                     <li className="flex items-center text-sm">
                       <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0" />
-                      <span>Medal & Certificate</span>
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0" />
-                      <span>Networking Event</span>
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0" />
-                      <span>Magazine Feature</span>
+                      <span>Networking Opportunity and Branding in Magazine</span>
                     </li>
                     <li className="flex items-center text-sm">
                       <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0" />
@@ -809,7 +806,9 @@ export default function Home() {
                 </div>
                 <div className="px-6 pb-6 mt-auto">
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                    <Button className="w-full bg-gray-500 hover:bg-gray-600 font-medium">Select Standard</Button>
+                    <Link href="/registration">
+                      <Button className="w-full bg-gray-500 hover:bg-gray-600 font-medium">Select Standard</Button>
+                    </Link>
                   </motion.div>
                 </div>
               </div>
@@ -828,37 +827,35 @@ export default function Home() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800">Supreme</h3>
                   <div className="my-4 flex items-baseline justify-center">
-                    <span className="text-3xl font-bold text-purple-800">₹95k</span>
+                    <span className="text-lg font-medium text-purple-800">For growing organizations</span>
                   </div>
-                  <p className="text-sm text-gray-500 mb-6">For growing organizations</p>
                 </div>
                 <div className="px-6 pb-4 flex-grow">
                   <ul className="space-y-3 mb-8">
-                    <li className="flex items-center text-sm font-medium text-gray-800">
-                      <Package className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
-                      <span>All Standard features</span>
+                    <li className="flex items-start text-sm">
+                      <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0 mt-1" />
+                      <div>
+                        <span>Honorary Degree from ROGO</span>
+                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
+                          <span className="text-xs text-gray-400">University Logo</span>
+                        </div>
+                      </div>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Video Byte</span>
+                      <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
+                      <span>All Standard Features</span>
                     </li>
-                    <li className="flex items-center text-sm text-gray-400">
-                      <Minus className="h-4 w-4 text-gray-300 mr-2 flex-shrink-0" />
-                      <span>New York Release</span>
-                    </li>
-                    <li className="flex items-center text-sm text-gray-400">
-                      <Minus className="h-4 w-4 text-gray-300 mr-2 flex-shrink-0" />
-                      <span>Podcast Interview</span>
-                    </li>
-                    <li className="flex items-center text-sm text-gray-400">
-                      <Minus className="h-4 w-4 text-gray-300 mr-2 flex-shrink-0" />
-                      <span>Premium Guest Session</span>
+                    <li className="flex items-center text-sm">
+                      <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
+                      <span>Enhanced Networking with Video Byte</span>
                     </li>
                   </ul>
                 </div>
                 <div className="px-6 pb-6 mt-auto">
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                    <Button className="w-full bg-blue-500 hover:bg-blue-600 font-medium">Select Supreme</Button>
+                    <Link href="/registration">
+                      <Button className="w-full bg-blue-500 hover:bg-blue-600 font-medium">Select Supreme</Button>
+                    </Link>
                   </motion.div>
                 </div>
               </div>
@@ -877,37 +874,47 @@ export default function Home() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800">Elite</h3>
                   <div className="my-4 flex items-baseline justify-center">
-                    <span className="text-3xl font-bold text-purple-800">₹1.15 lacs</span>
+                    <span className="text-lg font-medium text-purple-800">For established businesses</span>
                   </div>
-                  <p className="text-sm text-gray-500 mb-6">For established businesses</p>
                 </div>
                 <div className="px-6 pb-4 flex-grow">
                   <ul className="space-y-3 mb-8">
-                    <li className="flex items-center text-sm font-medium text-gray-800">
-                      <Package className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
-                      <span>All Supreme features</span>
+                    <li className="flex items-start text-sm">
+                      <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0 mt-1" />
+                      <div>
+                        <span>Honorary Degree from Wilmington Metropolitan University</span>
+                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
+                          <span className="text-xs text-gray-400">University Logo</span>
+                        </div>
+                      </div>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">New York Release</span>
+                      <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
+                      <span>All Supreme Features</span>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Enhanced Video Byte</span>
+                      <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
+                      <span>Enhanced Networking Opportunities</span>
                     </li>
-                    <li className="flex items-center text-sm text-gray-400">
-                      <Minus className="h-4 w-4 text-gray-300 mr-2 flex-shrink-0" />
-                      <span>Keynote Speaker Slot</span>
+                    <li className="flex items-center text-sm">
+                      <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
+                      <span>University Convocation at International Location or GCA in-house, India</span>
                     </li>
-                    <li className="flex items-center text-sm text-gray-400">
-                      <Minus className="h-4 w-4 text-gray-300 mr-2 flex-shrink-0" />
-                      <span>Premium Guest Session</span>
+                    <li className="flex items-center text-sm">
+                      <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
+                      <span>Film Making (Actor and Anchor creating your biography in metropolitan city location)</span>
+                    </li>
+                    <li className="flex items-center text-sm">
+                      <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0" />
+                      <span>Fast Track</span>
                     </li>
                   </ul>
                 </div>
                 <div className="px-6 pb-6 mt-auto">
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                    <Button className="w-full bg-purple-600 hover:bg-purple-700 font-medium">Select Elite</Button>
+                    <Link href="/registration">
+                      <Button className="w-full bg-purple-600 hover:bg-purple-700 font-medium">Select Elite</Button>
+                    </Link>
                   </motion.div>
                 </div>
               </div>
@@ -926,33 +933,35 @@ export default function Home() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800">Premium</h3>
                   <div className="my-4 flex items-baseline justify-center">
-                    <span className="text-3xl font-bold text-purple-800">₹1.25 lacs</span>
+                    <span className="text-lg font-medium text-purple-800">For industry leaders</span>
                   </div>
-                  <p className="text-sm text-gray-500 mb-6">For industry leaders</p>
                 </div>
                 <div className="px-6 pb-4 flex-grow">
                   <ul className="space-y-3 mb-8">
-                    <li className="flex items-center text-sm font-medium text-gray-800">
-                      <Package className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0" />
-                      <span>All Elite features</span>
+                    <li className="flex items-start text-sm">
+                      <CheckCircle className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0 mt-1" />
+                      <div>
+                        <span>Honorary Degree from Logos Hawkins</span>
+                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
+                          <span className="text-xs text-gray-400">University Logo</span>
+                        </div>
+                      </div>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Podcast Interview</span>
+                      <CheckCircle className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0" />
+                      <span>All Elite Features</span>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Keynote Speaker Slot</span>
-                    </li>
-                    <li className="flex items-center text-sm text-gray-400">
-                      <Minus className="h-4 w-4 text-gray-300 mr-2 flex-shrink-0" />
-                      <span>Premium Guest Session</span>
+                      <CheckCircle className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0" />
+                      <span>Happy Hour Session with Premium Guest</span>
                     </li>
                   </ul>
                 </div>
                 <div className="px-6 pb-6 mt-auto">
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-                    <Button className="w-full bg-amber-500 hover:bg-amber-600 font-medium">Select Premium</Button>
+                    <Link href="/registration">
+                      <Button className="w-full bg-amber-500 hover:bg-amber-600 font-medium">Select Premium</Button>
+                    </Link>
                   </motion.div>
                 </div>
               </div>
@@ -974,31 +983,31 @@ export default function Home() {
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800">Legends</h3>
                   <div className="my-4 flex items-baseline justify-center">
-                    <span className="text-3xl font-bold text-rose-600">₹2.5 lacs</span>
+                    <span className="text-lg font-medium text-rose-600">For industry trailblazers</span>
                   </div>
-                  <p className="text-sm text-gray-500 mb-6">For industry trailblazers</p>
                 </div>
                 <div className="px-6 pb-4 flex-grow">
                   <ul className="space-y-3 mb-8">
-                    <li className="flex items-center text-sm font-medium text-gray-800">
-                      <Package className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
-                      <span>All Premium features</span>
+                    <li className="flex items-start text-sm">
+                      <CheckCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0 mt-1" />
+                      <div>
+                        <span>Degree and Honorary degree from UGC-approved colleges/universities</span>
+                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
+                          <span className="text-xs text-gray-400">University Logo</span>
+                        </div>
+                      </div>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Premium Guest Session</span>
+                      <CheckCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
+                      <span>All Premium Features</span>
                     </li>
                     <li className="flex items-center text-sm">
-                      <PlusCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Global Media Coverage</span>
+                      <CheckCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
+                      <span>Global Media Coverage</span>
                     </li>
                     <li className="flex items-center text-sm">
-                      <Star className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">VIP Experience</span>
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <Award className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
-                      <span className="font-medium">Exclusive Networking</span>
+                      <CheckCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0" />
+                      <span>VIP Experience</span>
                     </li>
                   </ul>
                 </div>
@@ -1010,9 +1019,11 @@ export default function Home() {
                     initial="initial"
                     animate="animate"
                   >
-                    <Button className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 font-medium shadow-md shadow-rose-100">
-                      Select Legends
-                    </Button>
+                    <Link href="/registration">
+                      <Button className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 font-medium shadow-md shadow-rose-100">
+                        Select Legends
+                      </Button>
+                    </Link>
                   </motion.div>
                 </div>
               </div>
@@ -1038,38 +1049,123 @@ export default function Home() {
                     <th className="text-left py-3 px-4 font-medium text-gray-600">Feature</th>
                     <th className="text-center py-3 px-4 font-medium text-gray-600">Standard</th>
                     <th className="text-center py-3 px-4 font-medium text-gray-600">Supreme</th>
-                    <th className="text-center py-3 px-4 font-medium text-gray-600">Elite+</th>
+                    <th className="text-center py-3 px-4 font-medium text-gray-600">Elite</th>
+                    <th className="text-center py-3 px-4 font-medium text-gray-600">Premium</th>
+                    <th className="text-center py-3 px-4 font-medium text-gray-600">Legends</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { feature: "Certificate & Medal", standard: true, supreme: true, elite: true },
-                    { feature: "Magazine Feature", standard: true, supreme: true, elite: true },
-                    { feature: "Video Byte", standard: false, supreme: true, elite: true },
-                    { feature: "New York Release", standard: false, supreme: false, elite: true },
-                    { feature: "Keynote Speaker", standard: false, supreme: false, elite: true },
+                    {
+                      feature: "Honorary Degree",
+                      standard: "American Merit Council",
+                      supreme: "ROGO",
+                      elite: "Wilmington Metropolitan",
+                      premium: "Logos Hawkins",
+                      legends: "UGC-approved"
+                    },
+                    {
+                      feature: "GCA Membership",
+                      standard: true,
+                      supreme: true,
+                      elite: true,
+                      premium: true,
+                      legends: true
+                    },
+                    {
+                      feature: "Video Byte",
+                      standard: false,
+                      supreme: true,
+                      elite: true,
+                      premium: true,
+                      legends: true
+                    },
+                    {
+                      feature: "International Convocation",
+                      standard: false,
+                      supreme: false,
+                      elite: true,
+                      premium: true,
+                      legends: true
+                    },
+                    {
+                      feature: "Film Making",
+                      standard: false,
+                      supreme: false,
+                      elite: true,
+                      premium: true,
+                      legends: true
+                    },
+                    {
+                      feature: "Premium Guest Session",
+                      standard: false,
+                      supreme: false,
+                      elite: false,
+                      premium: true,
+                      legends: true
+                    },
+                    {
+                      feature: "Global Media Coverage",
+                      standard: false,
+                      supreme: false,
+                      elite: false,
+                      premium: false,
+                      legends: true
+                    },
+                    {
+                      feature: "VIP Experience",
+                      standard: false,
+                      supreme: false,
+                      elite: false,
+                      premium: false,
+                      legends: true
+                    },
                   ].map((item, i) => (
                     <tr key={i} className="border-b border-gray-100">
                       <td className="py-3 px-4 text-gray-700">{item.feature}</td>
                       <td className="py-3 px-4 text-center">
-                        {item.standard ? (
+                        {item.standard === true ? (
                           <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : (
+                        ) : item.standard === false ? (
                           <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
+                        ) : (
+                          <span className="text-xs">{item.standard}</span>
                         )}
                       </td>
                       <td className="py-3 px-4 text-center">
-                        {item.supreme ? (
+                        {item.supreme === true ? (
                           <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : (
+                        ) : item.supreme === false ? (
                           <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
+                        ) : (
+                          <span className="text-xs">{item.supreme}</span>
                         )}
                       </td>
                       <td className="py-3 px-4 text-center">
-                        {item.elite ? (
+                        {item.elite === true ? (
                           <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : (
+                        ) : item.elite === false ? (
                           <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
+                        ) : (
+                          <span className="text-xs">{item.elite}</span>
+                        )}
+                      </td>
+                      <td className="py-3 px-4 text-center">
+                        {item.premium === true ? (
+                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
+                        ) : item.premium === false ? (
+                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
+                        ) : (
+                          <span className="text-xs">{item.premium}</span>
+                        )}
+                      </td>
+                      <td className="py-3 px-4 text-center">
+                        {item.legends === true ? (
+                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
+                        ) : item.legends === false ? (
+                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
+                        ) : (
+                          <span className="text-xs">{item.legends}</span>
                         )}
                       </td>
                     </tr>
@@ -1078,27 +1174,6 @@ export default function Home() {
               </table>
             </div>
           </motion.div>
-
-          {/* Custom package CTA */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-16 text-center max-w-2xl mx-auto bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-2xl"
-          >
-            <MessageSquare className="h-10 w-10 text-purple-500 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-gray-800 mb-3">Need a Custom Solution?</h3>
-            <p className="text-gray-600 mb-6">We can tailor our services to your specific requirements and goals.</p>
-            <Link href="/contact">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-                <Button className="bg-white text-purple-700 border border-purple-200 hover:bg-purple-50 shadow-sm font-medium">
-                  Contact for Custom Package
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </motion.div>
-            </Link>
-          </motion.div> */}
         </div>
       </section>
 
@@ -1213,10 +1288,10 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="text-xl font-semibold text-center mb-10 flex items-center justify-center gap-2">
+            {/* <h3 className="text-xl font-semibold text-center mb-10 flex items-center justify-center gap-2">
               <Award className="h-5 w-5 text-gray-500" />
               <span>Silver Sponsors</span>
-            </h3>
+            </h3> */}
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
               {/* Replace with actual sponsor logos */}
@@ -1264,7 +1339,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4">
-            Collaborations
+              Collaborations
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Accreditation & Collaboration</h2>
 
@@ -1319,8 +1394,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-            {/* Industry Collaborations Card */}
-            {/* <motion.div
+      {/* Industry Collaborations Card */}
+      {/* <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -1330,7 +1405,7 @@ export default function Home() {
                 <div className="h-2 bg-gradient-to-r from-amber-500 to-amber-400"></div>
                 <div className="p-8">
                   {/* Card Header */}
-                  {/* <div className="flex items-center gap-4 mb-6">
+      {/* <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Briefcase className="h-6 w-6 text-amber-600" />
                     </div>
@@ -1340,8 +1415,8 @@ export default function Home() {
                     </div>
                   </div>  */}
 
-                  {/* Industry Partners Grid */}
-                  {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+      {/* Industry Partners Grid */}
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                     {[
                       "Tech Innovation Alliance",
                       "Global Business Forum",
@@ -1370,8 +1445,8 @@ export default function Home() {
             </motion.div>
           </div> */}
 
-          {/* Accreditation & Recognition Card */}
-          {/* <motion.div
+      {/* Accreditation & Recognition Card */}
+      {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -1386,8 +1461,8 @@ export default function Home() {
                   Accreditation & Recognition
                 </h3> */}
 
-                {/* Recognition Items Grid */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Recognition Items Grid */}
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
                     {
                       icon: Shield,
@@ -1430,8 +1505,8 @@ export default function Home() {
                   ))}
                 </div> */}
 
-                {/* Note Box */}
-                {/* <div className="mt-8 p-4 bg-purple-50 rounded-lg border border-purple-100">
+      {/* Note Box */}
+      {/* <div className="mt-8 p-4 bg-purple-50 rounded-lg border border-purple-100">
                   <div className="flex items-start gap-3">
                     <div className="text-purple-600 mt-1 flex-shrink-0">
                       <Info className="h-5 w-5" />
@@ -1461,12 +1536,12 @@ export default function Home() {
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4">
-            Membership
+              Membership
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Membership & Representation</h2>
 
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We welcome dedicated individuals and groups whose values resonate with our mission of excellence and innovation.
+              We welcome dedicated individuals and groups whose values resonate with our mission of excellence and innovation.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mt-6"></div>
           </motion.div>
@@ -1620,7 +1695,7 @@ export default function Home() {
           </p>
 
           {/* CTA Button with enhanced styling */}
-          <Link href="/nomination">
+          <Link href="/registration">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }} className="inline-block">
               <Button
                 size="lg"
