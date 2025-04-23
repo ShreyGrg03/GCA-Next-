@@ -1131,9 +1131,9 @@ export default function GCAConference() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Badge className="text-sm font-medium text-[#2783ac] bg-white uppercase tracking-wider px-3 py-1">
+            {/* <Badge className="text-sm font-medium text-[#2783ac] bg-white uppercase tracking-wider px-3 py-1">
               Leadership
-            </Badge>
+            </Badge> */}
             <h2 className="text-3xl md:text-4xl font-bold text-[#2783ac] relative inline-block mt-2 mb-6 after:content-[''] after:absolute after:bottom-[-0.5rem] after:left-1/2 after:-translate-x-1/2 after:w-[60px] after:h-[3px] after:bg-gradient-to-r after:from-[#2783ac] after:to-[#c753a5]">
               Committees
             </h2>
@@ -1493,9 +1493,9 @@ export default function GCAConference() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Badge className="text-sm font-medium text-[#2783ac] bg-white uppercase tracking-wider px-3 py-1">
+            {/* <Badge className="text-sm font-medium text-[#2783ac] bg-white uppercase tracking-wider px-3 py-1">
               Process
-            </Badge>
+            </Badge> */}
             <h2 className="text-3xl md:text-4xl font-bold text-[#2783ac] relative inline-block mt-2 mb-6 after:content-[''] after:absolute after:bottom-[-0.5rem] after:left-1/2 after:-translate-x-1/2 after:w-[60px] after:h-[3px] after:bg-gradient-to-r after:from-[#2783ac] after:to-[#c753a5]">
               Paper Submission
             </h2>

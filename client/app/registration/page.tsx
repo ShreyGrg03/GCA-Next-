@@ -72,7 +72,7 @@ export default function NominationForm() {
 
             toast("Your nomination has been successfully submitted.")
             form.reset()
-            window.location.href = "/payments/payment";
+            window.location.href = "/";
             await new Promise((resolve) => setTimeout(resolve, 1500))
         } catch (error) {
             console.error('Submission error:', error)

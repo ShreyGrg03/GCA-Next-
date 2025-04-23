@@ -13,11 +13,9 @@ import {
   ChevronRight,
   ChevronUp,
   Layers,
-  ListChecks,
   MapPin,
 
   Users,
-  XCircle,
   ChevronDown,
   Mail,
   Phone,
@@ -455,7 +453,7 @@ export default function Home() {
                     </p>
                   </>
                 ) : (
-                  "The Golden Conference Award is a premier tech-conference bringing together global scientists, researchers, and industry leaders. We foster collaboration between academia and industry while providing branding, market research, and strategic advisory services. Committed to excellence, we enhance brand visibility, promote knowledge-sharing, and drive progress through innovation."
+                  "Golden Conference Award is a premier tech-conference bringing together global scientists, researchers, and industry leaders. We foster collaboration between academia and industry while providing branding, market research, and strategic advisory services. Committed to excellence, we enhance brand visibility, promote knowledge-sharing, and drive progress through innovation."
                 )}
               </p>
             </div>
@@ -575,7 +573,7 @@ export default function Home() {
                   </p>
                 </>
               ) : (
-                "The Golden Conference Award hosted the The Business and Education Awards & The Icon Awards, honoring excellence across industries. The event celebrated leaders, entrepreneurs, and educators for their contributions to business, education, and leadership. With inspiring speeches, networking opportunities, and global media coverage, the ceremony highlighted innovation, talent, and transformative leadership, reinforcing its mission to drive progress and excellence worldwide."
+                "Golden Conference Award hosted the The Business and Education Awards & The Icon Awards, honoring excellence across industries. The event celebrated leaders, entrepreneurs, and educators for their contributions to business, education, and leadership. With inspiring speeches, networking opportunities, and global media coverage, the ceremony highlighted innovation, talent, and transformative leadership, reinforcing its mission to drive progress and excellence worldwide."
               )}
             </p>
             <div className="text-center mt-6">
@@ -1031,7 +1029,7 @@ export default function Home() {
           </div>
 
           {/* Package features comparison */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -1173,7 +1171,7 @@ export default function Home() {
                 </tbody>
               </table>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
