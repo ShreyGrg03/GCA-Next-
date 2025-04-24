@@ -782,9 +782,8 @@ export default function Home() {
                     <li className="flex items-start text-sm">
                       <CheckCircle className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0 mt-1" />
                       <div>
-                        <span>Honorary Degree from American Merit Council and Oxford International College</span>
-                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
-                          <span className="text-xs text-gray-400">University Logo</span>
+                        <div className="mt-2 h-12 w-full">
+                          <img src="images/oic.png" alt="University Logo" className="w-full h-full object-contain" />
                         </div>
                       </div>
                     </li>
@@ -833,9 +832,8 @@ export default function Home() {
                     <li className="flex items-start text-sm">
                       <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0 mt-1" />
                       <div>
-                        <span>Honorary Degree from ROGO</span>
-                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
-                          <span className="text-xs text-gray-400">University Logo</span>
+                        <div className="mt-2 h-12 w-full">
+                          <img src="images/supreme.png" alt="University Logo" className="w-full h-full object-contain rounded-full " />
                         </div>
                       </div>
                     </li>
@@ -880,9 +878,8 @@ export default function Home() {
                     <li className="flex items-start text-sm">
                       <CheckCircle className="h-4 w-4 text-purple-500 mr-2 flex-shrink-0 mt-1" />
                       <div>
-                        <span>Honorary Degree from Wilmington Metropolitan University</span>
-                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
-                          <span className="text-xs text-gray-400">University Logo</span>
+                        <div className="mt-2 h-12 w-full">
+                          <img src="images/WMU.png" alt="University Logo" className="w-full h-full object-contain" />
                         </div>
                       </div>
                     </li>
@@ -939,9 +936,8 @@ export default function Home() {
                     <li className="flex items-start text-sm">
                       <CheckCircle className="h-4 w-4 text-amber-500 mr-2 flex-shrink-0 mt-1" />
                       <div>
-                        <span>Honorary Degree from Logos Hawkins</span>
-                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
-                          <span className="text-xs text-gray-400">University Logo</span>
+                        <div className="mt-2 h-12 w-full">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrj9SuArp2numImJDeY8ydo7oaEL6ooMnrHA&s" alt="University Logo" className="w-full h-full object-contain" />
                         </div>
                       </div>
                     </li>
@@ -989,9 +985,8 @@ export default function Home() {
                     <li className="flex items-start text-sm">
                       <CheckCircle className="h-4 w-4 text-rose-500 mr-2 flex-shrink-0 mt-1" />
                       <div>
-                        <span>Degree and Honorary degree from UGC-approved colleges/universities</span>
-                        <div className="mt-2 h-12 w-full bg-gray-50 rounded flex items-center justify-center">
-                          <span className="text-xs text-gray-400">University Logo</span>
+                        <div className="mt-2 h-12 w-full">
+                          <img src="" alt="University Logo" className="w-full h-full object-contain" />
                         </div>
                       </div>
                     </li>
@@ -1027,151 +1022,6 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
-
-          {/* Package features comparison */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-16 bg-white rounded-xl shadow-md p-8 border border-gray-100 max-w-4xl mx-auto"
-          >
-            <h3 className="text-xl font-semibold text-gray-800 mb-6 flex items-center">
-              <ListChecks className="h-5 w-5 mr-2 text-purple-600" />
-              Package Comparison
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-3 px-4 font-medium text-gray-600">Feature</th>
-                    <th className="text-center py-3 px-4 font-medium text-gray-600">Standard</th>
-                    <th className="text-center py-3 px-4 font-medium text-gray-600">Supreme</th>
-                    <th className="text-center py-3 px-4 font-medium text-gray-600">Elite</th>
-                    <th className="text-center py-3 px-4 font-medium text-gray-600">Premium</th>
-                    <th className="text-center py-3 px-4 font-medium text-gray-600">Legends</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    {
-                      feature: "Honorary Degree",
-                      standard: "American Merit Council",
-                      supreme: "ROGO",
-                      elite: "Wilmington Metropolitan",
-                      premium: "Logos Hawkins",
-                      legends: "UGC-approved"
-                    },
-                    {
-                      feature: "GCA Membership",
-                      standard: true,
-                      supreme: true,
-                      elite: true,
-                      premium: true,
-                      legends: true
-                    },
-                    {
-                      feature: "Video Byte",
-                      standard: false,
-                      supreme: true,
-                      elite: true,
-                      premium: true,
-                      legends: true
-                    },
-                    {
-                      feature: "International Convocation",
-                      standard: false,
-                      supreme: false,
-                      elite: true,
-                      premium: true,
-                      legends: true
-                    },
-                    {
-                      feature: "Film Making",
-                      standard: false,
-                      supreme: false,
-                      elite: true,
-                      premium: true,
-                      legends: true
-                    },
-                    {
-                      feature: "Premium Guest Session",
-                      standard: false,
-                      supreme: false,
-                      elite: false,
-                      premium: true,
-                      legends: true
-                    },
-                    {
-                      feature: "Global Media Coverage",
-                      standard: false,
-                      supreme: false,
-                      elite: false,
-                      premium: false,
-                      legends: true
-                    },
-                    {
-                      feature: "VIP Experience",
-                      standard: false,
-                      supreme: false,
-                      elite: false,
-                      premium: false,
-                      legends: true
-                    },
-                  ].map((item, i) => (
-                    <tr key={i} className="border-b border-gray-100">
-                      <td className="py-3 px-4 text-gray-700">{item.feature}</td>
-                      <td className="py-3 px-4 text-center">
-                        {item.standard === true ? (
-                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : item.standard === false ? (
-                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
-                        ) : (
-                          <span className="text-xs">{item.standard}</span>
-                        )}
-                      </td>
-                      <td className="py-3 px-4 text-center">
-                        {item.supreme === true ? (
-                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : item.supreme === false ? (
-                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
-                        ) : (
-                          <span className="text-xs">{item.supreme}</span>
-                        )}
-                      </td>
-                      <td className="py-3 px-4 text-center">
-                        {item.elite === true ? (
-                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : item.elite === false ? (
-                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
-                        ) : (
-                          <span className="text-xs">{item.elite}</span>
-                        )}
-                      </td>
-                      <td className="py-3 px-4 text-center">
-                        {item.premium === true ? (
-                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : item.premium === false ? (
-                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
-                        ) : (
-                          <span className="text-xs">{item.premium}</span>
-                        )}
-                      </td>
-                      <td className="py-3 px-4 text-center">
-                        {item.legends === true ? (
-                          <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
-                        ) : item.legends === false ? (
-                          <XCircle className="h-4 w-4 text-gray-300 mx-auto" />
-                        ) : (
-                          <span className="text-xs">{item.legends}</span>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </motion.div> */}
         </div>
       </section>
 
